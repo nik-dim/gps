@@ -1,8 +1,3 @@
-import java.util.DoubleSummaryStatistics;
-
-/**
- * Created by nikdim on 26-Nov-17.
- */
 public class Point {
         double  x;
         double  y;
