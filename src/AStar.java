@@ -18,35 +18,35 @@ public class AStar {
 
         public AStarSearch(HashMap<Point, ArrayList<Point>> neighbors, Point start, Client goal)
         {
-            Comparator<Point> comparator = new ();
-            PriorityQueue<Point> frontier = new PriorityQueue<Point>();
-            frontier.
-
-            cameFrom[start] = start;
-            costSoFar[start] = 0;
-
-            while (frontier.Count > 0)
-            {
-                var current = frontier.Dequeue();
-
-                if (current.equals(goal))
-                {
-                    break;
-                }
-
-                foreach (var next in graph.Neighbors(current))
-                {
-                    double newCost = costSoFar[current]
-                            + graph.Cost(current, next);
-                    if (!costSoFar.ContainsKey(next)
-                            || newCost < costSoFar[next])
-                    {
-                        costSoFar[next] = newCost;
-                        double priority = newCost + Heuristic(next, goal);
-                        frontier.Enqueue(next, priority);
-                        cameFrom[next] = current;
-                    }
-                }
+//            Comparator<Point> comparator = new ();
+//            PriorityQueue<Point> frontier = new PriorityQueue<Point>();
+//            frontier.
+//
+//            cameFrom[start] = start;
+//            costSoFar[start] = 0;
+//
+//            while (frontier.Count > 0)
+//            {
+//                var current = frontier.Dequeue();
+//
+//                if (current.equals(goal))
+//                {
+//                    break;
+//                }
+//
+//                foreach (var next in graph.Neighbors(current))
+//                {
+//                    double newCost = costSoFar[current]
+//                            + graph.Cost(current, next);
+//                    if (!costSoFar.ContainsKey(next)
+//                            || newCost < costSoFar[next])
+//                    {
+//                        costSoFar[next] = newCost;
+//                        double priority = newCost + Heuristic(next, goal);
+//                        frontier.Enqueue(next, priority);
+//                        cameFrom[next] = current;
+//                    }
+//                }
             }
         }
 
