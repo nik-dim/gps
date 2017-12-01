@@ -29,7 +29,7 @@ public class AStar {
             {
                 var current = frontier.Dequeue();
 
-                if (current.Equals(goal))
+                if (current.equals(goal))
                 {
                     break;
                 }
