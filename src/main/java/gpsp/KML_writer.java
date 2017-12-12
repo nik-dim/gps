@@ -60,7 +60,7 @@ public class KML_writer {
 
 
 
-    public static void createKML(ArrayList<ArrayList<Point>> paths, ArrayList<Point> taxis, int id_bestPath, Client client) throws FileNotFoundException, JAXBException {
+    public static void createKML(ArrayList<ArrayList<Point>> paths, ArrayList<Point> taxis, int id_bestPath, Client client, String nameOfOutputFile) throws FileNotFoundException, JAXBException {
         Marshaller marshaller = JAXBContext.newInstance(new Class[]{Kml.class}).createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", new NamespacePrefixMapper()
@@ -86,7 +86,7 @@ public class KML_writer {
         int i = 0;
         Style style = doc.createAndAddStyle();
         String hex = Integer.toHexString(Color.green.getRGB()).substring(2);
-        style.withId("GREEN").createAndSetLineStyle().withColor(hex).withWidth(4.0);
+        style.withId("GREEN").createAndSetLineStyle().withColor(hex).withWidth(7.0);
         for (i=0 ; i<NUMBER_OF_TAXIS ; i++){
             style = doc.createAndAddStyle();
             String hex1 = Integer.toHexString(colors.get(i).getRGB()).substring(2);
@@ -114,7 +114,7 @@ public class KML_writer {
                 .withName("gpsp.Client").withOpen(Boolean.TRUE)
                 .createAndSetPoint().addToCoordinates(client.getX(), client.getY());
         //marshals into file
-        marshaller.marshal(kml, new File("C:\\Users\\nikdim\\IdeaProjects\\gps\\output6.kml"));
+        marshaller.marshal(kml, new File(nameOfOutputFile+ ".kml"));
 //        kml.marshal(new File("output5.kml"));
     }
 }
