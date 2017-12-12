@@ -70,7 +70,7 @@
             </ns2:LineStyle>
         </ns2:Style>
         <ns2:Placemark>
-            <ns2:name>Taxi 0</ns2:name>
+            <ns2:name>gpsp.Taxi 0</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=0,g=255,b=0]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -79,7 +79,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 1</ns2:name>
+            <ns2:name>gpsp.Taxi 1</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=0,g=0,b=0]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -88,7 +88,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 2</ns2:name>
+            <ns2:name>gpsp.Taxi 2</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=0,g=0,b=255]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -97,7 +97,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 3</ns2:name>
+            <ns2:name>gpsp.Taxi 3</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=255,g=0,b=255]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -106,7 +106,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 4</ns2:name>
+            <ns2:name>gpsp.Taxi 4</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=255,g=200,b=0]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -115,7 +115,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 5</ns2:name>
+            <ns2:name>gpsp.Taxi 5</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=255,g=0,b=0]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -124,7 +124,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 6</ns2:name>
+            <ns2:name>gpsp.Taxi 6</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=255,g=255,b=255]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -133,7 +133,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 7</ns2:name>
+            <ns2:name>gpsp.Taxi 7</ns2:name>
             <ns2:description>This is the bast path A* found to the client!!!</ns2:description>
             <ns2:styleUrl>GREEN</ns2:styleUrl>
             <ns2:LineString>
@@ -143,7 +143,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 8</ns2:name>
+            <ns2:name>gpsp.Taxi 8</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=64,g=64,b=64]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -152,7 +152,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 9</ns2:name>
+            <ns2:name>gpsp.Taxi 9</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=128,g=128,b=128]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>
@@ -161,7 +161,7 @@
             </ns2:LineString>
         </ns2:Placemark>
         <ns2:Placemark>
-            <ns2:name>Taxi 10</ns2:name>
+            <ns2:name>gpsp.Taxi 10</ns2:name>
             <ns2:styleUrl>java.awt.Color[r=192,g=192,b=192]</ns2:styleUrl>
             <ns2:LineString>
                 <ns2:extrude>1</ns2:extrude>

@@ -1,4 +1,4 @@
-import java.util.Objects;
+package gpsp;
 
 public class Point {
         double  x;

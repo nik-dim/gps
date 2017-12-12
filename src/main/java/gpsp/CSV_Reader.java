@@ -1,3 +1,5 @@
+package gpsp;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -14,7 +16,7 @@ public class CSV_Reader {
 
     public ArrayList<Point> readPoints (String filename) throws IOException{
         ArrayList<Point> points = new ArrayList<Point>();
-//        ArrayList<Point> temp = new ArrayList<Point>();
+//        ArrayList<gpsp.Point> temp = new ArrayList<gpsp.Point>();
         String splitBy = ",";
         BufferedReader br = new BufferedReader(new FileReader(filename));
 

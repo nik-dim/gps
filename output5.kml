@@ -70,7 +70,7 @@
             </LineStyle>
         </Style>
         <Placemark>
-            <name>Taxi 0</name>
+            <name>gpsp.Taxi 0</name>
             <styleUrl>#0</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -79,7 +79,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 1</name>
+            <name>gpsp.Taxi 1</name>
             <styleUrl>#1</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -88,7 +88,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 2</name>
+            <name>gpsp.Taxi 2</name>
             <styleUrl>#2</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -97,7 +97,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 3</name>
+            <name>gpsp.Taxi 3</name>
             <styleUrl>#3</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -106,7 +106,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 4</name>
+            <name>gpsp.Taxi 4</name>
             <styleUrl>#4</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -115,7 +115,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 5</name>
+            <name>gpsp.Taxi 5</name>
             <styleUrl>#5</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -124,7 +124,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 6</name>
+            <name>gpsp.Taxi 6</name>
             <styleUrl>#6</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -133,7 +133,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 7</name>
+            <name>gpsp.Taxi 7</name>
             <description>This is the bast path A* found to the client!!!</description>
             <styleUrl>#GREEN</styleUrl>
             <LineString>
@@ -143,7 +143,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 8</name>
+            <name>gpsp.Taxi 8</name>
             <styleUrl>#8</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -152,7 +152,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 9</name>
+            <name>gpsp.Taxi 9</name>
             <styleUrl>#9</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -161,7 +161,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 10</name>
+            <name>gpsp.Taxi 10</name>
             <styleUrl>#10</styleUrl>
             <LineString>
                 <extrude>1</extrude>

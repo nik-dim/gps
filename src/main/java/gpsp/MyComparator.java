@@ -1,3 +1,5 @@
+package gpsp;
+
 import java.util.Comparator;
 
 public class MyComparator implements Comparator<Point> {

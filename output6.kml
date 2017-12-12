@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
     <Document>
-        <name>Taxi Routes</name>
+        <name>gpsp.Taxi Routes</name>
         <open>1</open>
         <Style id="GREEN">
             <LineStyle>
@@ -89,7 +89,7 @@
             </IconStyle>
         </Style>
         <Placemark>
-            <name>Taxi 100</name>
+            <name>gpsp.Taxi 100</name>
             <styleUrl>#0</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -98,7 +98,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 110</name>
+            <name>gpsp.Taxi 110</name>
             <styleUrl>#1</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -107,7 +107,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 120</name>
+            <name>gpsp.Taxi 120</name>
             <styleUrl>#2</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -116,7 +116,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 130</name>
+            <name>gpsp.Taxi 130</name>
             <styleUrl>#3</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -125,7 +125,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 140</name>
+            <name>gpsp.Taxi 140</name>
             <styleUrl>#4</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -134,7 +134,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 150</name>
+            <name>gpsp.Taxi 150</name>
             <styleUrl>#5</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -143,7 +143,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 160</name>
+            <name>gpsp.Taxi 160</name>
             <styleUrl>#6</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -152,7 +152,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 170</name>
+            <name>gpsp.Taxi 170</name>
             <description>This is the best path A* found to the client!!!</description>
             <styleUrl>#GREEN</styleUrl>
             <LineString>
@@ -162,7 +162,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 180</name>
+            <name>gpsp.Taxi 180</name>
             <styleUrl>#8</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -171,7 +171,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 190</name>
+            <name>gpsp.Taxi 190</name>
             <styleUrl>#9</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -180,7 +180,7 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 200</name>
+            <name>gpsp.Taxi 200</name>
             <styleUrl>#10</styleUrl>
             <LineString>
                 <extrude>1</extrude>
@@ -189,84 +189,84 @@
             </LineString>
         </Placemark>
         <Placemark>
-            <name>Taxi 100</name>
+            <name>gpsp.Taxi 100</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7414609,37.984285</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 110</name>
+            <name>gpsp.Taxi 110</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.6915079,37.966896</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 120</name>
+            <name>gpsp.Taxi 120</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7579842,37.9626349</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 130</name>
+            <name>gpsp.Taxi 130</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7890063,38.0330795</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 140</name>
+            <name>gpsp.Taxi 140</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7670127,38.018535</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 150</name>
+            <name>gpsp.Taxi 150</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7341556,37.9610896</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 160</name>
+            <name>gpsp.Taxi 160</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7399801,37.945997</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 170</name>
+            <name>gpsp.Taxi 170</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7565183,37.9973834</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 180</name>
+            <name>gpsp.Taxi 180</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7673974,37.9457398</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 190</name>
+            <name>gpsp.Taxi 190</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.6888763,38.0104584</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Taxi 200</name>
+            <name>gpsp.Taxi 200</name>
             <styleUrl>#taxi</styleUrl>
             <Point>
                 <coordinates>23.7949204,38.0125062</coordinates>
             </Point>
         </Placemark>
         <Placemark>
-            <name>Client</name>
+            <name>gpsp.Client</name>
             <open>1</open>
             <Point>
                 <coordinates>23.783842,37.980879</coordinates>

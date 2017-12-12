@@ -1,3 +1,5 @@
+package gpsp;
+
 import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 import de.micromata.opengis.kml.v_2_2_0.*;
 
@@ -38,7 +40,7 @@ public class KML_writer {
                 .withHref("http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png");
         for (int i=0 ; i<NUMBER_OF_TAXIS ; i++){
             Placemark p = doc.createAndAddPlacemark()
-                    .withName("Taxi " + Integer.toString(taxis.get(i).id) )
+                    .withName("gpsp.Taxi " + Integer.toString(taxis.get(i).id) )
                     .withStyleUrl("#taxi");
             de.micromata.opengis.kml.v_2_2_0.Point point = p.createAndSetPoint()
                     .addToCoordinates(taxis.get(i).x, taxis.get(i).y);
@@ -47,7 +49,7 @@ public class KML_writer {
 
 
 
-//    public static void addClient(Document doc, Client c){
+//    public static void addClient(Document doc, gpsp.Client c){
 //        Style style = doc.createAndAddStyle().withId("taxi");
 //        IconStyle iconStyle = style.createAndSetIconStyle()
 //                .withColor("ff00d6ff")
@@ -80,7 +82,7 @@ public class KML_writer {
         });
 
         Kml kml = new Kml();
-        Document doc = kml.createAndSetDocument().withName("Taxi Routes").withOpen(true);
+        Document doc = kml.createAndSetDocument().withName("gpsp.Taxi Routes").withOpen(true);
         int i = 0;
         Style style = doc.createAndAddStyle();
         String hex = Integer.toHexString(Color.green.getRGB()).substring(2);
@@ -92,7 +94,7 @@ public class KML_writer {
         }
         i = 0;
         for ( ArrayList<Point> path : paths) {
-            Placemark p = doc.createAndAddPlacemark().withName("Taxi " + Integer.toString(taxis.get(i).id));
+            Placemark p = doc.createAndAddPlacemark().withName("gpsp.Taxi " + Integer.toString(taxis.get(i).id));
             if (taxis.get(i).id == id_bestPath) {
                 p.withStyleUrl("#GREEN").withDescription("This is the best path A* found to the client!!!");
             }
@@ -109,7 +111,7 @@ public class KML_writer {
 
         addTaxis(doc, taxis);
         doc.createAndAddPlacemark()
-                .withName("Client").withOpen(Boolean.TRUE)
+                .withName("gpsp.Client").withOpen(Boolean.TRUE)
                 .createAndSetPoint().addToCoordinates(client.getX(), client.getY());
         //marshals into file
         marshaller.marshal(kml, new File("C:\\Users\\nikdim\\IdeaProjects\\gps\\output6.kml"));
