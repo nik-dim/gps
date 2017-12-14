@@ -31,7 +31,7 @@ public class Main {
             }
         }
 
-        String nameOfOutputFile = "out";
+        String nameOfOutputFile = option + args[0] ;
         System.out.println("The GPS uses " + option.toUpperCase() + " distance");
         System.out.println("Size of beam = " + args[0]);
         long startTime = System.currentTimeMillis();
@@ -72,7 +72,7 @@ public class Main {
                 min = path.get(0).getDistance();
             }
             paths.add(path);
-            path.clear();
+//            path.clear();
         }
         endTime = System.currentTimeMillis();
         System.out.println("A* algorithm\t:\t" + Long.toString(endTime-startTime)+ " ms" );
