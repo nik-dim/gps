@@ -103,9 +103,12 @@ public class KML_writer {
             }
             LineString lineString = p.createAndSetLineString().withExtrude(true).
                     withAltitudeMode(AltitudeMode.RELATIVE_TO_SEA_FLOOR);
-            for (Point n : path) {
-                lineString.addToCoordinates(n.getX(), n.getY());
+            if (path != null){
+                for (Point n : path) {
+                    lineString.addToCoordinates(n.getX(), n.getY());
+                }
             }
+
             i++;
         }
 

@@ -4,7 +4,7 @@ import javax.xml.bind.JAXBException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-
+import java.io.*;
 
 public class Main {
 
@@ -30,6 +30,24 @@ public class Main {
                 System.exit(0);
             }
         }
+
+        // writer
+
+        PrintWriter writer = null;
+        if (option.equals("Haversian")) {
+            File file = new File(option + args[0] + "details.csv");
+            if (file.createNewFile()){
+                System.out.println("File is created!");
+            }else{
+                System.out.println("File already exists.");
+            }
+            writer = new PrintWriter(file);
+            writer.println("Taxi ID, Max openSet Size, A* Steps, Distance");
+        }
+
+
+
+        // writer
 
         String nameOfOutputFile = option + args[0] ;
         System.out.println("The GPS uses " + option.toUpperCase() + " distance");
@@ -67,12 +85,28 @@ public class Main {
             else{
                 path  = MyAstar.AStarSearch(neighbors,point,resolved_client);
             }
-            if( min > path.get(0).getDistance()){
-                idBestPath = point.getId();
-                min = path.get(0).getDistance();
+            if (option.equals("Haversian")) {
+                if (path == null) {
+                    writer.print(point.getId() + ",");
+                    writer.print(MyAstarHaversian.getMaxSetSize() + ",");
+                    writer.print(MyAstarHaversian.getStep() + ",");
+                    writer.println("-");
+                } else {
+                    if (min > path.get(0).getDistance()) {
+                        idBestPath = point.getId();
+                        min = path.get(0).getDistance();
+                    }
+                    writer.print(point.getId() + ",");
+                    writer.print(MyAstarHaversian.getMaxSetSize() + ",");
+                    writer.print(MyAstarHaversian.getStep() + ",");
+                    writer.println(path.get(0).getDistance());
+                }
             }
             paths.add(path);
 //            path.clear();
+        }
+        if (option.equals("Haversian")) {
+            writer.close();
         }
         endTime = System.currentTimeMillis();
         System.out.println("A* algorithm\t:\t" + Long.toString(endTime-startTime)+ " ms" );

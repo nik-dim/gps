@@ -10,6 +10,17 @@ public class AStarHaversian {
 
     public int MAX_SIZE;
     static final int EARTH_RADIUS = 6371;
+    public int step_count;
+    public int max_openset_size;
+
+    public int getStep() {
+        return this.step_count;
+    }
+    public int getMaxSetSize() {
+        return max_openset_size;
+    }
+
+
 
     AStarHaversian(int maxsize){
         this.MAX_SIZE = maxsize;
@@ -63,6 +74,7 @@ public class AStarHaversian {
 
     public ArrayList<Point> AStarSearchHaversian(HashMap<Point, ArrayList<Point>> neighbors, Point start, Point goal)
     {
+
         HashMap<Point, Point>  cameFrom = new HashMap< Point, Point>();
         TreeSet<Point> MyTreeSet = new TreeSet<Point>(new MyComparator());
         HashMap< Point, Point > visited = new HashMap< Point, Point >();
@@ -72,8 +84,21 @@ public class AStarHaversian {
         ArrayList<Point> temp = new ArrayList<Point>();
         Point head = start;		// head of treeSet, initially equal to start
 
+        step_count = 0;
+        max_openset_size = 0;
+
         while( !(head.getX()==goal.getX() && head.getY()==goal.getY()) ){
+
+            if(max_openset_size < MyTreeSet.size()){
+                max_openset_size = MyTreeSet.size();
+            }
+            if (MyTreeSet.isEmpty()){
+                System.out.println("The taxi with ID = " + Integer.toString(start.getId()) + " cannot reach Client due to small beam size");
+                return null;
+            }
             head = MyTreeSet.pollFirst();
+
+            step_count++;
 //                        System.out.println(head.getX() + " " + head.getY());
             visited.put(head,head); 						// set head visited
             temp = neighbors.get(head);
