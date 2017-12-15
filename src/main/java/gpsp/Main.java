@@ -9,16 +9,16 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException, JAXBException {
-        String option = "Haversian";
+        String option = "Haversine";
         if (args.length == 0 || args.length > 2){
             System.out.println("Give exactly 2 arguments:");
             System.out.println("\t1st\t : size of beam");
-            System.out.println("\t2nd(optional) : h for Haversian(default) or m for Manhattan");
+            System.out.println("\t2nd(optional) : h for Haversine(default) or m for Manhattan");
             System.exit(0);
         }
         else if( args.length == 2){
             if (args[1].equals("h")){
-                option = "Haversian";
+                option = "Haversine";
             }
             else if (args[1].equals("m")){
                 option = "Manhattan";
@@ -26,7 +26,7 @@ public class Main {
             else{
                 System.out.println("Give exactly 2 arguments:");
                 System.out.println("\t1st\t : size of beam");
-                System.out.println("\t2nd(optional) : h for Haversian(default) or m for Manhattan");
+                System.out.println("\t2nd(optional) : h for Haversine(default) or m for Manhattan");
                 System.exit(0);
             }
         }
@@ -34,12 +34,12 @@ public class Main {
         // writer
 
         PrintWriter writer = null;
-        if (option.equals("Haversian")) {
-            File file = new File(option + args[0] + "details.csv");
+        if (option.equals("Haversine")) {
+            File file = new File( option + args[0] + "_details.csv");
             if (file.createNewFile()){
-                System.out.println("File is created!");
+                System.out.println(".csv File is created!");
             }else{
-                System.out.println("File already exists.");
+                System.out.println(".csv File already exists.");
             }
             writer = new PrintWriter(file);
             writer.println("Taxi ID, Max openSet Size, A* Steps, Distance");
@@ -74,22 +74,22 @@ public class Main {
         ArrayList<ArrayList<Point>> paths = new ArrayList<ArrayList<Point>>();
 
         AStar MyAstar = new AStar(Integer.parseInt(args[0]));
-        AStarHaversian MyAstarHaversian = new AStarHaversian(Integer.parseInt(args[0]));
+        AStarHaversine MyAstarHaversine = new AStarHaversine(Integer.parseInt(args[0]));
         int idBestPath = -1;
         double min = Double.MAX_VALUE;
         ArrayList<Point> path = new ArrayList<Point>();
         for (Point point: resolved_taxis){
-            if (option.equals("Haversian")){
-                path  = MyAstarHaversian.AStarSearchHaversian(neighbors,point,resolved_client);
+            if (option.equals("Haversine")){
+                path  = MyAstarHaversine.AStarSearchHaversine(neighbors,point,resolved_client);
             }
             else{
                 path  = MyAstar.AStarSearch(neighbors,point,resolved_client);
             }
-            if (option.equals("Haversian")) {
+            if (option.equals("Haversine")) {
                 if (path == null) {
                     writer.print(point.getId() + ",");
-                    writer.print(MyAstarHaversian.getMaxSetSize() + ",");
-                    writer.print(MyAstarHaversian.getStep() + ",");
+                    writer.print(MyAstarHaversine.getMaxSetSize() + ",");
+                    writer.print(MyAstarHaversine.getStep() + ",");
                     writer.println("-");
                 } else {
                     if (min > path.get(0).getDistance()) {
@@ -97,15 +97,15 @@ public class Main {
                         min = path.get(0).getDistance();
                     }
                     writer.print(point.getId() + ",");
-                    writer.print(MyAstarHaversian.getMaxSetSize() + ",");
-                    writer.print(MyAstarHaversian.getStep() + ",");
+                    writer.print(MyAstarHaversine.getMaxSetSize() + ",");
+                    writer.print(MyAstarHaversine.getStep() + ",");
                     writer.println(path.get(0).getDistance());
                 }
             }
             paths.add(path);
 //            path.clear();
         }
-        if (option.equals("Haversian")) {
+        if (option.equals("Haversine")) {
             writer.close();
         }
         endTime = System.currentTimeMillis();
