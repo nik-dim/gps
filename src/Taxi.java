@@ -13,7 +13,11 @@ public class Taxi {
         id = Integer.parseInt(attributes[2]);
     }
 
+
     double distance(Point p){
+        '''
+        computes the Euclidean distance between this point and the point p
+        '''
         return Math.pow(this.x - p.x , 2) + Math.pow(this.y - p.y , 2);
     }
 

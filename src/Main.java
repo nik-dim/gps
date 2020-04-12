@@ -42,6 +42,7 @@ public class Main {
                 System.out.println(".csv File already exists.");
             }
             writer = new PrintWriter(file);
+            // write the column names of the .csv output file
             writer.println("Taxi ID, Max openSet Size, A* Steps, Distance");
         }
 

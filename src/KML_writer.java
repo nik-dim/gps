@@ -47,20 +47,13 @@ public class KML_writer {
         }
     }
 
-
-
-//    public static void addClient(Document doc, gpsp.Client c){
-//        Style style = doc.createAndAddStyle().withId("taxi");
-//        IconStyle iconStyle = style.createAndSetIconStyle()
-//                .withColor("ff00d6ff")
-//                .withScale(1);
-//        Icon icon = iconStyle.createAndSetIcon()
-//                .withHref("http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png");
-//    }
-
-
-
-    public static void createKML(ArrayList<ArrayList<Point>> paths, ArrayList<Point> taxis, int id_bestPath, Client client, String nameOfOutputFile) throws FileNotFoundException, JAXBException {
+    public static void createKML(
+                ArrayList<ArrayList<Point>> paths,
+                ArrayList<Point> taxis, 
+                int id_bestPath, 
+                Client client, 
+                String nameOfOutputFile) throws FileNotFoundException, JAXBException {
+                    
         Marshaller marshaller = JAXBContext.newInstance(new Class[]{Kml.class}).createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", new NamespacePrefixMapper()

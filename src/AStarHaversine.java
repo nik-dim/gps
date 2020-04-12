@@ -99,12 +99,13 @@ public class AStarHaversine {
             head = MyTreeSet.pollFirst();
 
             step_count++;
-//                        System.out.println(head.getX() + " " + head.getY());
-            visited.put(head,head); 						// set head visited
+            // set head to visited
+            visited.put(head,head); 						
             temp = neighbors.get(head);
             if(temp!=null){
                 for (Point p: temp ) {
-                    if( !visited.containsKey(p) ){			// if not visited
+                    // if not visited
+                    if( !visited.containsKey(p) ){			
                         p.setHeuristic( Heuristic(p, goal) );
                         p.setDistance(head.getDistance() + Distance(head, p));
                         MyTreeSet.add(p);

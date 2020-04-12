@@ -42,7 +42,6 @@ public class Point {
                 this.distance = d;
         }
 
-        // this may need to change to long
         @Override
         public int hashCode() {
                 int v = Double.valueOf(this.x).hashCode() + Double.valueOf(/** Math.pow(10,9)*/ + this.y).hashCode();
