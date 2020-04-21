@@ -1,0 +1,10 @@
+File creation:			9ms
+Prolog Consult:			114254ms
+A* for Taxi #:160		6042ms
+	TaxiId : 	160,
+	MaxBeamSize : 	64,
+	Step Count : 	5577,
+A* for Taxi #:110		4963ms
+	TaxiId : 	110,
+	MaxBeamSize : 	64,
+	Step Count : 	11889,

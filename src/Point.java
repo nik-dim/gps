@@ -1,17 +1,27 @@
 package gpsp;
 
+import java.io.PrintWriter;
+import java.util.Locale;
+
 public class Point {
         double  x;
         double  y;
         int     id;
+        long     node_id;
         double heuristic;
         double distance;
-        Point(String[] attributes){
+        Point(String[] attributes, PrintWriter db_writer){
                 x = Double.parseDouble(attributes[0]);
                 y = Double.parseDouble(attributes[1]);
                 id = Integer.parseInt(attributes[2]);
+                node_id = Long.parseLong(attributes[3]);
+//                db_writer.println ("belongsTo("+ node_id + "," + id + ").");
         }
         Point(){}
+        Point(double a,double b){
+                x = a;
+                y = b;
+        }
 
 
         public double getX() {
@@ -22,6 +32,9 @@ public class Point {
         }
         public int getId() {
                 return id;
+        }
+        public long getNodeId() {
+            return node_id;
         }
         public double getDistance(){
                 return distance;
@@ -42,6 +55,7 @@ public class Point {
                 this.distance = d;
         }
 
+        // this may need to change to long
         @Override
         public int hashCode() {
                 int v = Double.valueOf(this.x).hashCode() + Double.valueOf(/** Math.pow(10,9)*/ + this.y).hashCode();
